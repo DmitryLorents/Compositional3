@@ -30,6 +30,11 @@ class MyCollectionViewCell: UICollectionViewCell {
         ].compactMap({$0})
         imageView.image = images.randomElement()
         contentView.clipsToBounds = true
+        self.layer.borderWidth = 2
+        self.layer.borderColor = UIColor.systemRed.cgColor
+        imageView.layer.cornerRadius = 10
+        self.layer.cornerRadius = 10
+        self.contentView.clipsToBounds = true
     }
     
     required init?(coder: NSCoder) {
