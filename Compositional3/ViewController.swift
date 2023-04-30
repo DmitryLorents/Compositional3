@@ -32,8 +32,8 @@ class ViewController: UIViewController {
         
         let verticalstackGroup = NSCollectionLayoutGroup.vertical(
             layoutSize: NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(1),
-                heightDimension: .fractionalWidth(1/3)),
+                widthDimension: .fractionalWidth(1/3),
+                heightDimension: .fractionalHeight(1)),
             repeatingSubitem: verticalstackItem,
             count: 2)
         
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         
         let tripletHorizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1),
-            heightDimension: .fractionalWidth(1)),
+            heightDimension: .fractionalWidth(0.1)),
             repeatingSubitem: tripletItem,
             count: 3)
         
